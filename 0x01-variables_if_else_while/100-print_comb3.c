@@ -6,30 +6,26 @@
 *Return: Always 0 (Success)
 */
 int main(void)
-
 {
 int i, e;
 
-i = 48;
-e = 48;
+for (i = 0; i < 9; i++)
+{
+for (e = i + 1; e < 10; e++)
+{
+putchar((i % 10) + '0');
+putchar((e % 10) + '0');
 
-while (e < 58)
-{
-i = 48;
-while (i < 58)
-{
-if (e != i && e < i)
-{
-break;
-}
+if (i == 8 && e == 9)
+continue;
+
 putchar(',');
 putchar(' ');
 }
-i++;
 }
-e++;
-}
+
 putchar('\n');
+
 return (0);
 
 }
