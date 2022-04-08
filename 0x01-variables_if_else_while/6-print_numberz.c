@@ -9,7 +9,7 @@ int main(void)
 {
 int digit;
 
-for (digit = 40; digit <= 57; digit++)
+for (digit = 48; digit <= 57; digit++)
 {
 putchar (digit);
 }
