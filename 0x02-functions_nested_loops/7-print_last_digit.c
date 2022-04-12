@@ -5,7 +5,7 @@
 *@n: is the int to print
 *Return: ineger value
 */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 int last;
 last = n % 10;
